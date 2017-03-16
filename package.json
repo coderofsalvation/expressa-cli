@@ -1,0 +1,22 @@
+{
+  "name": "expressa-cli",
+  "version": "1.0.0",
+  "description": "commandline interface for expressa",
+  "main": "index.js",
+  "bin": {
+    "expressa": "./index.js"
+  },
+  "directories": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "scripts": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "schemize": "^1.1.0"
+  }
+}
