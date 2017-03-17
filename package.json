@@ -1,8 +1,9 @@
 {
   "name": "expressa-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "commandline interface for expressa",
   "main": "index.js",
+  "repository":"https://github.com/coderofsalvation/expressa-cli",
   "bin": {
     "expressa": "./index.js"
   },
