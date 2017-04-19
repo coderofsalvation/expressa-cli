@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "commandline interface for expressa",
   "main": "index.js",
-  "repository":"https://github.com/coderofsalvation/expressa-cli",
+  "repository": "https://github.com/coderofsalvation/expressa-cli",
   "bin": {
     "expressa": "./index.js"
   },
@@ -17,8 +17,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.3.0",
+    "expressa": "^0.2.11",
     "minimist": "^1.2.0",
-    "schemize": "^1.1.0",
-    "expressa": "^0.2.3"
+    "schemize": "^1.1.0"
   }
 }
