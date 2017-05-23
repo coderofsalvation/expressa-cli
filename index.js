@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 var argv = require('minimist')(process.argv.slice(2));
-
 var lib = function(){
 
   this.error = function(msg,exit,usage){
@@ -18,7 +17,6 @@ var lib = function(){
   return this
 
 }.apply({})
-
-if( argv['_'].length )
+if(argv['_'].length)
   require('./cmd/'+argv['_'][0])(lib,argv)
 else lib.usage()
