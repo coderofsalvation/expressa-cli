@@ -5,13 +5,13 @@ module.exports = function(lib,argv){
   var jsonfile = argv['_'][2]
   var collectionname = argv['_'][1]
   if( !jsonfile )
-    lib.error("ERROR: no json file provided",true,true)
+    lib.error("no json file provided",true,true)
   if( !collectionname )
-    lib.error("ERROR: no json file provided",true,true)
+    lib.error("no json file provided",true,true)
   if (!fs.existsSync( process.cwd()+'/data' ) ) 
-    lib.error("ERROR: data-dir not found..are you in a expressa-app directory?",true)
+    lib.error("data-dir not found..are you in a expressa-app directory?",true)
   if (!fs.existsSync(jsonfile) )
-    lib.error("ERROR: jsonfile not found..please pass absolute path",true)
+    lib.error("jsonfile not found..please pass absolute path",true)
 
   var json = require(jsonfile)
   var collectionfile = process.cwd()+"/data/collection/"+collectionname+".json"
