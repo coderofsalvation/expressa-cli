@@ -17,9 +17,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "glob": "7.1.2",
     "async": "^2.3.0",
     "expressa": "^0.2.11",
     "minimist": "^1.2.0",
+    "mongodb": "2.2.27",
     "schemize": "^1.1.0"
   }
 }
