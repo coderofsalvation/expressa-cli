@@ -11,7 +11,9 @@ var lib = function(){
 
   this.usage = function(){
     console.log("Usage: ")
-    console.log("  expressa json2collection <collectionname> <./payload.json>    <- converts json payload into data/collection/collectionname.json")
+    console.log("  expressa json2collection <collectionname> <exampleJsonFile> <storagetype> <hasOwner?>")
+    console.log("    <- converts json payload into data/collection/collectionname.json")
+    console.log("    <- e.g. expressa json2collection blog ./blog.json postgres true")
     console.log("  expressa createsuperuser <email> <password>                   <- create a new super user")
     console.log("  expressa migratedb <collectionname> <newdbtype>               <- migrate collection to the new database type")
     console.log("  expressa getusertoken <email>                                 <- get an auth token for a user account")
