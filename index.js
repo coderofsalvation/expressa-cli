@@ -19,6 +19,11 @@ var lib = function(){
   return this
 
 }.apply({})
+
+try {
+  var settings = require( process.cwd()+'/data/settings/development')
+}catch (e){ lib.error("please run this command in a expressa application directory", true) }
+
 if(argv['_'].length)
   require('./cmd/'+argv['_'][0])(lib,argv)
 else lib.usage()
